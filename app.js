@@ -17,6 +17,14 @@ app.get('/',(request, response) => {
   response.render("index");
 });
 
+app.get('/trayecto',(request, response) => {
+  response.render("trayectos");
+});
+
+app.get('/contacto',(request, response) => {
+  response.render("contacto");
+});
+
 app.listen(app.get('port'), () => {
   console.log(`Node app running on localhost 8080`);
 });
