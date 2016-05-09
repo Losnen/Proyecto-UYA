@@ -1,54 +1,39 @@
 <!--Header-->
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#!" id="logo" class="brand-logo">SYC</a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/trayecto">Trayectos</a></li>
-                    <li><a href="/contacto">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <h1 id="titulo">Share Your Car</h1>
-            </div>
-
+<div class="navbar-fixed">
+    <nav id=header role="navigation">
+        <div class="nav-wrapper">
+            <a href="index.html" id="logo" class="brand-logo">SYC</a>
+            <ul role="menubar" class="right hide-on-med-and-down">
+                <li role="menuitem"><a role="link" href="/">Inicio</a></li>
+                <li role="menuitem"><a role="link" href="/trayecto">Trayectos</a></li>
+                <li role="menuitem"><a role="link" href="/contacto">Contacto</a></li>
+            </ul>
         </div>
-
-    <!--Content-->
-
-        <div class="row">
+    </nav>
+</div>
+<div class="container" role="grid">
+    <div class="row" role="row">
+        <div class="col s12">
+            <h1 id="titulo" role="heading">Share Your Car</h1>
         </div>
 
     </div>
 
-    <!--Footer-->
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Share Your Car</h5>
-                    <p class="grey-text text-lighten-4">Comparte gastos, ahorra y cuida del medio ambiente!</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Autores</h5>
-                    <ul>
-                        <li class="white-text"> Kevin Estévez Expósito</li>
-                        <li class="white-text"> Nitesh Gul Ramnani</li>
-                        <li class="white-text"> Samuel Ramos Barroso</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-                <p align="center">© 2016 Copyright SYC</p>
-        </div>
-    </footer>
+<!--Content-->
 
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <div class="row" role="main">
+        <div class="col s12">
+            <form class="col s12" action="" method="get">
+                <div class="row" role="row">
+                    <div class="input-field col s12">
+                        <input placeholder="La Laguna, Tacoronte, La Orotava, Icod de los vinos..." id="busqueda" type="text">
+                        <label for="trayecto">Ciudad</label>
+                    </div>
+                </div>
+                <a role="button" class="waves-effect waves-teal btn-flat" id="boton1">Buscar</a>
+            </form>
+            <p id="resultado_busqueda"></p>
+        </div>
+    </div>
+
+</div>
