@@ -3,7 +3,6 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-var User = require("./models/user_schema").User;
 const lay = require('express-ejs-layouts');
 
 app.set('port',(process.env.PORT || 8080));
