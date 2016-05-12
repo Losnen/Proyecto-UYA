@@ -10,13 +10,13 @@
     margin-left: 15px;
 }
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 #relleno {
   height: 100px;
 }
-  footer {
-    flex: 1 0 auto;
-  }
+footer {
+  flex: 1 0 auto;
+}
