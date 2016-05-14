@@ -8,12 +8,30 @@ const app = express();
 
 const connection = mysql.createConnection({ // Mysql Connection
     host : 'localhost',
-    user : 'root',
-    password : 'uya1516',
-    database : 'coches',
+    user : 'losnen',
+    password : '',
+    database : 'uya',
 });
 
-
+app.get('/usuarios',function(req,res){
+    
+    var data = {"error": 1, "Usuarios": ""}; 
+    
+    connection.query("SELECT * from usuarios",function(err, rows, fields) {
+        
+        if(err) throw err;
+        
+        if(rows.length != 0) {
+            data["error"] = 0;
+            data["Usuarios"] = rows;
+            console.log(data["Usuarios"]);
+            res.json(data);
+        }else {
+            data["Usuarios"] = 'No se encontraron usuarios';
+            res.json(data);
+        }
+    });
+});
 
 app.set('port',(process.env.PORT || 8080));
 app.use(express.static(__dirname + '/public'));

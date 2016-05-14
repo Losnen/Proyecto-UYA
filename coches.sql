@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Coches` (
   `Rutinas` VARCHAR(45) NOT NULL,
   `Otros viajeros` VARCHAR(45) NULL,
   `Zonas` VARCHAR(45) NULL,
-  PRIMARY KEY (`Modelo`, `Conductor`, `Rutinas`))
+  PRIMARY KEY (`Conductor`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_spanish_ci;
