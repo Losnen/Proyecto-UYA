@@ -1,8 +1,6 @@
 "use strict"
 
 const express = require('express');
-const path = require('path');
-const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const app = express();
 
@@ -15,19 +13,16 @@ const connection = mysql.createConnection({ // Mysql Connection
 
 app.get('/usuarios',function(req,res){
     
-    var data = {"error": 1, "Usuarios": ""}; 
-    
-    connection.query("SELECT * from usuarios",function(err, rows, fields) {
+    console.log(req.query.nombre)
+    connection.query("SELECT * FROM usuarios WHERE Rutinas = '" + req.query.nombre +"'",function(err, rows, fields) {
         
         if(err) throw err;
         
+        console.log(rows);
         if(rows.length != 0) {
-            data["error"] = 0;
-            data["Usuarios"] = rows;
-            console.log(data["Usuarios"]);
             res.json(rows);
         }else {
-            data["Usuarios"] = 'No se encontraron usuarios';
+            res.json("No se encuentra en la BBDD");
         }
     });
 });
