@@ -25,10 +25,9 @@ app.get('/usuarios',function(req,res){
             data["error"] = 0;
             data["Usuarios"] = rows;
             console.log(data["Usuarios"]);
-            res.json(data);
+            res.json(rows);
         }else {
             data["Usuarios"] = 'No se encontraron usuarios';
-            res.json(data);
         }
     });
 });

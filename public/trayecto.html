@@ -6,8 +6,6 @@
     <title>Share Your Car</title>
     <!--Favicon-->
     <link rel="icon" type="image/jpg" href="css/images/icono.jpg" />
-    <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <!--Let browser know website is optimized for mobile-->
@@ -47,18 +45,34 @@
 
         <div class="row" role="main">
             <div class="col s12">
-                <form class="col s12" action="" method="get">
-                    <div class="row" role="row">
-                        <div class="input-field col s12">
-                            <input placeholder="La Laguna, Tacoronte, La Orotava, Icod de los vinos..." id="busqueda" type="text">
-                            <label for="trayecto">Ciudad</label>
-                        </div>
-                    </div>
-                    <a role="button" class="waves-effect waves-teal btn-flat" id="boton1">Buscar</a>
-                </form>
-                <p id="resultado_busqueda"></p>
+                <div class="input-field col s12">
+                    <input placeholder="Introduzca su nombre" id="busqueda" type="text" class="validate">
+                    <label for="busqueda">Usuario</label>
+                  </div>
+                  <div class="col s4 offset-s5">
+                      <a class="waves-effect waves-light btn" id="boton">Buscar</a>
+                  </div>
+            </div>
+            <div class="col s4 offset-s4 load">
+                <div class="progress">
+                  <div class="indeterminate"></div>
+                </div>
+            </div>
+            <div class="col s12">
+                <table id ="tt" class="centered esconder" >
+                    <thead>
+                      <tr>
+                          <th>Conductor</th>
+                          <th>Modelo</th>
+                          <th>Otros Viajeros</th>
+                          <th>Zonas</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tabla_p"></tbody>
+                  </table>
             </div>
         </div>
+        
 
     </div>
     <div id="relleno"></div>
@@ -86,9 +100,9 @@
     </footer>
 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/client.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/parser_json.js"></script>
 </body>
 
 </html>
