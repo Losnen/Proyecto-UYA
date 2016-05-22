@@ -3,20 +3,28 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
+var csslintStylish = require('csslint-stylish');
 var nodemon = require('gulp-nodemon');
-
+var csslint = require('gulp-csslint');
+var imagemin = require('gulp-imagemin');
 
 //Tarea default
-gulp.task('default', ['nodemon']);
+gulp.task('default', ['browser-sync']);
 
 
 //Tarea jshintjs
-gulp.task('lint', function() {
+gulp.task('lint:js', function() {
   return gulp.src('./public/js/client.js')
     .pipe(jshint())
     .pipe(jshint.reporter(stylish))
 });
 
+//Tarea lintcss
+gulp.task('lint:css', function() {
+  gulp.src('public/css/main.css')
+    .pipe(csslint())
+    .pipe(csslint.reporter(csslintStylish));
+});
 
 //Tarea Browser-sync
 gulp.task('browser-sync', ['nodemon'], () => {
@@ -38,4 +46,11 @@ gulp.task('nodemon',function(cb) {
       started = true;
     }
   });
+});
+
+//Optimizar imágenes
+gulp.task('img', function () {
+	gulp.src('public/css/images/*')
+		.pipe(imagemin())
+		.pipe(gulp.dest('public/css/images'))
 });

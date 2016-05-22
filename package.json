@@ -18,7 +18,10 @@
   },
   "devDependencies": {
     "browser-sync": "^2.12.8",
+    "csslint-stylish": "0.0.4",
     "gulp": "^3.9.1",
+    "gulp-csslint": "^0.3.0",
+    "gulp-imagemin": "^3.0.1",
     "gulp-jshint": "^2.0.1",
     "gulp-nodemon": "^2.0.7",
     "jshint": "^2.9.2",
