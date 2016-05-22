@@ -1,6 +1,5 @@
 #Proyecto Usabilidad y Accesibilidad 15-16
-##Samuel Ramos Barroso, Kevin Estévez Expósito y Nitesh Gul Ramnani
-
+##Samuel Ramos Barroso y Kevin Estévez Expósito
 
 ##Badges
 [![Dependency Status](https://david-dm.org/losnen/Proyecto-UYA.svg)](https://david-dm.org/losnen/Proyecto-UYA)

@@ -11,7 +11,7 @@ const connection = mysql.createConnection({ // Mysql Connection
     database : 'uya',
 });
 
-app.get('/usuarios',function(req,res){
+app.get('/usuarios',function(req,res){ //Middleware de la BBDD
     
     console.log(req.query.nombre)
     connection.query("SELECT * FROM usuarios WHERE Rutinas = '" + req.query.nombre +"'",function(err, rows, fields) {
@@ -28,7 +28,7 @@ app.get('/usuarios',function(req,res){
 });
 
 app.set('port',(process.env.PORT || 8080));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public')); //Middleware Estático
 
 app.listen(app.get('port'), () => {
   console.log(`Node app running on localhost 8080`);
