@@ -1,6 +1,9 @@
 $(document).ready( function()  {
    
+   $('.slider').slider();
+
    $('.parallax').parallax();
+   
    $("#boton").click( function() {
       console.log($("#busqueda").val());
       $.get("/usuarios",{
