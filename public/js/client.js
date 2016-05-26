@@ -34,5 +34,13 @@ $(document).ready( function()  {
             }
       });
    });
+   
+   $("#env_contacto").click( function() {
+      $.get("/enviar",{
+      "correo": $("#correo").val(),
+      "asunto": $("#asunto").val(),
+      "texto": $("#texto").val()
+      }, function (data) {});
+   });
     
 });
