@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 const express = require('express');
 const mysql = require('mysql');
@@ -15,7 +15,7 @@ const connection = mysql.createConnection({ // Mysql Connection
 
 app.get('/usuarios',function(req,res){ //Middleware de la BBDD
     
-    console.log(req.query.nombre)
+    console.log(req.query.nombre);
     connection.query("SELECT * FROM usuarios WHERE Rutinas = '" + req.query.nombre +"'",function(err, rows, fields) {
         
         if(err) throw err;
@@ -29,9 +29,8 @@ app.get('/usuarios',function(req,res){ //Middleware de la BBDD
     });
 });
 
-app.get('/enviar',function(req,res){
+app.get('/enviar',function(req,res) { //Middleware para enviar un mensaje de contacto
 
-   // var transporter = nodemailer.createTransport('smtps://shareyourcar1516gmail.com:UYA-1516');
     var transporter = nodemailer.createTransport({ 
         service: "Gmail",
         auth: { 

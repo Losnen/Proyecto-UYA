@@ -40,7 +40,7 @@ $(document).ready( function()  {
       "correo": $("#correo").val(),
       "asunto": $("#asunto").val(),
       "texto": $("#texto").val()
-      }, function (data) {});
+      }, function () {});
    });
     
 });
