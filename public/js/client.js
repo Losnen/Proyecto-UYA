@@ -40,7 +40,15 @@ $(document).ready( function()  {
       "correo": $("#correo").val(),
       "asunto": $("#asunto").val(),
       "texto": $("#texto").val()
-      }, function () {});
+      });
    });
     
+    $("#costes_btn").click( function() {
+       console.log($("#dest option:selected" ).text());
+       console.log($("#org option:selected" ).text());
+      $.get("/costes",{
+      "origen": $("#org option:selected" ).text(),
+      "destino": $("#dest option:selected" ).text()
+      });
+   });
 });

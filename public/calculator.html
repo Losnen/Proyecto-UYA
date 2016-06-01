@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Contacto | Share Your Car</title>
+    <title>Calculadora | Share Your Car</title>
     <!--Favicon-->
     <link rel="icon" type="image/jpg" href="css/images/icono.jpg" />
     <!--Import Google Icon Font-->
@@ -40,7 +40,7 @@
     <div class="container" role="grid">
         <div class="row" role="row">
             <div class="col s12">
-                <h1 id="titulo" role="heading" >Contacto</h1>
+                <h1 id="titulo" role="heading" >Acerca de nosotros</h1>
             </div>
 
         </div>
@@ -48,29 +48,27 @@
     <!--Content-->
 
         <div class="row" role="main">
-            <div class="col s12">
-                <form class="col s12">
-                    <div class="input-field col s12">
-                        <input placeholder="ejemplo@gmail.com" id="correo" type="text" class="validate">
-                        <label for="correo">Email</label>
-                    </div>
-                    <div class="input-field col s12">
-                            <input placeholder="Duda con trayectos" id="asunto" type="text" class="validate">
-                            <label for="asunto">Asunto</label>
-                    </div>
-                    <div class="input-field col s12">
-                        <textarea placeholder="Escriba su mensaje aquí" id="texto" class="materialize-textarea"></textarea>
-                        <label for="texto">Mensaje</label>
-                    </div>
-                    <button class="btn waves-effect waves-light" id="env_contacto">Submit
-                        <i class="material-icons right">send</i>
-                    </button>
-                </form>
-            </div>
-
-
+            <p class="center">Seleccione origen, destino y pulse el botón para calcular el coste del trayecto</p>
+            <form onSubmit="return false">
+                <div class="input-field col s12 m6">
+                    <select id="org" class="browser-default">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">La Laguna</option>
+                        <option value="2">Santa Cruz</option>
+                        <option value="3">Los Cristianos</option>
+                      </select>
+                  </div>
+                  <div id="dest" class="input-field col s12 m6">
+                    <select class="browser-default">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Icod de los Vinos</option>
+                        <option value="2">Buenavista</option>
+                        <option value="3">La Orotava</option>
+                    </select>
+                  </div>
+                  <button class="btn waves-effect waves-light" id="costes_btn">Buscar</button>
+            </form>
         </div>
-
     </div>
 
     <!--Footer-->
@@ -100,7 +98,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/client.js"></script>
-
 </body>
 
 </html>

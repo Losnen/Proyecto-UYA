@@ -13,7 +13,7 @@ const connection = mysql.createConnection({ // Mysql Connection
     database : 'uya',
 });
 
-app.get('/usuarios',function(req,res){ //Middleware de la BBDD
+app.get('/usuarios',function(req,res){ //Consulta de trayectos en la BBDD
     
     console.log(req.query.nombre);
     connection.query("SELECT * FROM usuarios WHERE Rutinas = '" + req.query.nombre +"'",function(err, rows, fields) {
@@ -29,7 +29,7 @@ app.get('/usuarios',function(req,res){ //Middleware de la BBDD
     });
 });
 
-app.get('/enviar',function(req,res) { //Middleware para enviar un mensaje de contacto
+app.get('/enviar',function(req,res) { //Para enviar un mensaje de contacto
 
     var transporter = nodemailer.createTransport({ 
         service: "Gmail",
@@ -42,7 +42,7 @@ app.get('/enviar',function(req,res) { //Middleware para enviar un mensaje de con
     var mailOptions = {
         from: req.query.correo,
         to: 'ShareYourCar, <shareyourcar1516@gmail.com>',
-        subject: req.query.asunto,
+        subject: req.query.asunto + " de " + req.query.correo,
         text: req.query.texto
     };
     
