@@ -24,17 +24,23 @@
 
     <!--Header-->
     <div class="navbar-fixed">
-        <nav id=header role="navigation">
-            <div class="nav-wrapper">
-                <a href="index.html" id="logo" class="brand-logo">SYC</a>
-                <ul role="menubar" class="right hide-on-med-and-down">
-                    <li role="menuitem"><a role="link" href="index.html">Inicio</a></li>
-                    <li role="menuitem"><a role="link" href="trayecto.html">Trayectos</a></li>
-                    <li role="menuitem"><a role="link" href="contacto.html">Contacto</a></li>
-                    <li role="menuitem"><a role="link" href="about.html">Acerca de SYC</a></li>
-                    <li role="menuitem"><a role="link" href="calculator.html">Calculadora</a></li>
-                </ul>
-            </div>
+        <nav class="teal lighten-2">
+            <a href="index.html" id="logo" class="brand-logo">SYC</a>
+            <ul class="right hide-on-med-and-down">
+                <li role="menuitem"><a role="link" href="index.html">Inicio</a></li>
+                <li role="menuitem"><a role="link" href="trayecto.html">Trayectos</a></li>
+                <li role="menuitem"><a role="link" href="contacto.html">Contacto</a></li>
+                <li role="menuitem"><a role="link" href="about.html">Acerca de SYC</a></li>
+                <li role="menuitem"><a role="link" href="calculator.html">Calculadora</a></li>  
+            </ul>
+            <ul id="slide-out" class="side-nav">
+                <li role="menuitem"><a role="link" href="index.html">Inicio</a></li>
+                <li role="menuitem"><a role="link" href="trayecto.html">Trayectos</a></li>
+                <li role="menuitem"><a role="link" href="contacto.html">Contacto</a></li>
+                <li role="menuitem"><a role="link" href="about.html">Acerca de SYC</a></li>
+                <li role="menuitem"><a role="link" href="calculator.html">Calculadora</a></li>  
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </nav>
     </div>
     <div class="container" role="grid">
@@ -55,15 +61,15 @@
                     <select id="org" class="browser-default">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">La Laguna</option>
-                        <option value="2">Santa Cruz</option>
-                        <option value="3">Los Cristianos</option>
+                        <option value="2">Los Cristianos</option>
+                        <option value="3">Santa Cruz</option>
                       </select>
                   </div>
                   <div id="dest" class="input-field col s12 m6">
                     <select class="browser-default">
                         <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Icod de los Vinos</option>
-                        <option value="2">Buenavista</option>
+                        <option value="1">Buenavista</option>
+                        <option value="2">Icod de los Vinos</option>
                         <option value="3">La Orotava</option>
                     </select>
                   </div>
@@ -73,7 +79,7 @@
     </div>
 
     <!--Footer-->
-    <footer class="page-footer">
+    <footer tabindex="0" class="page-footer teal lighten-2">
         <div class="container" role="grid">
             <div class="row" role="row">
                 <div class="col l6 s12">

@@ -48,18 +48,24 @@
 <body bgcolor="70DBDB">
 
     <!--Header-->
-    <div class="navbar-fixed" bgcolor="red">
-        <nav id=header role="navigation">
-            <div class="nav-wrapper">
-                <a href="index.html" id="logo" class="brand-logo">SYC</a>
-                <ul role="menubar" class="right hide-on-med-and-down">
-                    <li role="menuitem"><a role="link" href="index.html">Inicio</a></li>
-                    <li role="menuitem"><a role="link" href="trayecto.html">Trayectos</a></li>
-                    <li role="menuitem"><a role="link" href="contacto.html">Contacto</a></li>
-                    <li role="menuitem"><a role="link" href="about.html">Acerca de SYC</a></li>
-                    <li role="menuitem"><a role="link" href="calculator.html">Calculadora</a></li>
-                </ul>
-            </div>
+    <div class="navbar-fixed">
+        <nav class="teal lighten-2">
+            <a href="index.html" id="logo" class="brand-logo">SYC</a>
+            <ul class="right hide-on-med-and-down">
+                <li role="menuitem"><a role="link" href="index.html">Inicio</a></li>
+                <li role="menuitem"><a role="link" href="trayecto.html">Trayectos</a></li>
+                <li role="menuitem"><a role="link" href="contacto.html">Contacto</a></li>
+                <li role="menuitem"><a role="link" href="about.html">Acerca de SYC</a></li>
+                <li role="menuitem"><a role="link" href="calculator.html">Calculadora</a></li>  
+            </ul>
+            <ul id="slide-out" class="side-nav">
+                <li role="menuitem"><a role="link" href="index.html">Inicio</a></li>
+                <li role="menuitem"><a role="link" href="trayecto.html">Trayectos</a></li>
+                <li role="menuitem"><a role="link" href="contacto.html">Contacto</a></li>
+                <li role="menuitem"><a role="link" href="about.html">Acerca de SYC</a></li>
+                <li role="menuitem"><a role="link" href="calculator.html">Calculadora</a></li>  
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </nav>
     </div>
     <div class="container" role="grid">
@@ -153,7 +159,7 @@
     </div>
 
     <!--Footer-->
-    <footer class="page-footer">
+    <footer tabindex="0" class="page-footer teal lighten-2">
         <div class="container" role="grid">
             <div class="row" role="row">
                 <div class="col l6 s12">

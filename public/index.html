@@ -23,20 +23,28 @@
 <body>
 
     <!--Header-->
+ 
     <div class="navbar-fixed">
-        <nav id=header role="navigation">
-            <div class="nav-wrapper">
-                <a href="index.html" id="logo" class="brand-logo">SYC</a>
-                <ul role="menubar" class="right hide-on-med-and-down">
-                    <li role="menuitem"><a role="link" href="index.html">Inicio</a></li>
-                    <li role="menuitem"><a role="link" href="trayecto.html">Trayectos</a></li>
-                    <li role="menuitem"><a role="link" href="contacto.html">Contacto</a></li>
-                    <li role="menuitem"><a role="link" href="about.html">Acerca de SYC</a></li>
-                    <li role="menuitem"><a role="link" href="calculator.html">Calculadora</a></li>
-                </ul>
-            </div>
+        <nav class="teal lighten-2">
+            <a href="index.html" id="logo" class="brand-logo">SYC</a>
+            <ul class="right hide-on-med-and-down">
+                <li role="menuitem"><a role="link" href="index.html">Inicio</a></li>
+                <li role="menuitem"><a role="link" href="trayecto.html">Trayectos</a></li>
+                <li role="menuitem"><a role="link" href="contacto.html">Contacto</a></li>
+                <li role="menuitem"><a role="link" href="about.html">Acerca de SYC</a></li>
+                <li role="menuitem"><a role="link" href="calculator.html">Calculadora</a></li>  
+            </ul>
+            <ul id="slide-out" class="side-nav">
+                <li role="menuitem"><a role="link" href="index.html">Inicio</a></li>
+                <li role="menuitem"><a role="link" href="trayecto.html">Trayectos</a></li>
+                <li role="menuitem"><a role="link" href="contacto.html">Contacto</a></li>
+                <li role="menuitem"><a role="link" href="about.html">Acerca de SYC</a></li>
+                <li role="menuitem"><a role="link" href="calculator.html">Calculadora</a></li>  
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </nav>
     </div>
+
     <div class="container" role="grid">
         <div class="row" role="row">
             <div class="col s12">
@@ -54,65 +62,14 @@
 
     <div class="container" role="main">
         <div class="row" role="grid">
-            <div class="col s6" role="contentinfo">
-                <h2>¿Quienes somos?</h2>
+            <div class="col s12" role="contentinfo">
+                <h2>¿Quiénes somos?</h2>
                 <p>
                     El equipo de SYC está formado por un grupo de alumnos del Grado en Ingeniería Informática integrado en la ESIT (Escuela Superior de Ingeniería y Tecnología) de la ULL, cuyo perfil presenta facilidad para trabajar con nuevas tecnologías, así como una gran
                     imaginación para poner en funcionamiento dichas tecnologías, sacarles el máximo partido y crear sistemas y aplicaciones que puedan ser de gran utilidad para las personas.
                 </p>
+        </div>
 
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="css/images/compartir.jpg" alt="Comparte tu coche">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Comparte tu coche<p class="material-icons right">more_vert</p></span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Piensa en verde<p class="material-icons right">close</p></span>
-                        <p>
-                            Nuestra plataforma permite compartir los gastos puntuales del viaje como combustible y peajes, también evitar la emisión extra de gases de efecto invernadero, al permitir una mayor eficiencia energética en el uso de cada vehículo.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s6" role="contentinfo">
-                <h2>Funcionalidades</h2>
-                <table class="highlight">
-                    <tr>
-                        <th>Funcionalidad</th>
-                        <th>Integrada (V)/No integrada (X)</th>
-                    </tr>
-                    <tr>
-                        <td>Perfil personal de usuario</td>
-                        <td>V</td>
-                    </tr>
-                    <tr>
-                        <td>Opiniones y valoraciones entre usuarios</td>
-                        <td>V</td>
-                    </tr>
-                    <tr>
-                        <td>Calculadora de precios orientativos</td>
-                        <td>V</td>
-                    </tr>
-                    <tr>
-                        <td>Mensajería privada entre usuarios</td>
-                        <td>V</td>
-                    </tr>
-                    <tr>
-                        <td>Mensajería intantánea en tiempo real</td>
-                        <td>X</td>
-                    </tr>
-                    <tr>
-                        <td>Llamadas entre usuarios vía Internet</td>
-                        <td>X</td>
-                    </tr>
-                    <tr>
-                        <td>Mapa de <a href="http://www.google.es">Google</a> con recorridos</td>
-                        <td>X</td>
-                    </tr>
-                </table>
-            </div>
             <div class="col s12" role="contentinfo">
                 <h2>¿Cuándo podré usar SYC?</h2>
                 <p>
@@ -128,7 +85,7 @@
     </div>
 
     <!--Footer-->
-    <footer class="page-footer">
+    <footer tabindex="0" class="page-footer teal lighten-2">
         <div class="container" role="grid">
             <div class="row" role="row">
                 <div class="col l6 s12">
