@@ -29,6 +29,40 @@ app.get('/usuarios',function(req,res){ //Consulta de trayectos en la BBDD
     });
 });
 
+app.get('/registro',function(req,res){ //Consulta de trayectos en la BBDD
+    
+    console.log(req.query.r_nombre);
+    var post = {
+        Nombre: req.query.r_nombre,
+        Apellidos: req.query.r_apellidos,
+        Correo: req.query.r_correo,
+        Contra: req.query.r_contra
+    };
+
+    connection.query('INSERT INTO registro SET ?', post, function(error) {
+        if (error) {
+            console.log(error.message);
+        } else {
+            console.log('success');    
+        }
+    });
+});
+
+app.get('/calculadora',function(req,res){ //Consulta de trayectos en la BBDD
+    
+    connection.query("SELECT * FROM calculadora WHERE Trayecto = '" + req.query.org + "-" + req.query.dest + "'",function(err, rows, fields) {
+        
+        if(err) throw err;
+        
+        console.log(rows);
+        if(rows.length != 0) {
+            res.json(rows);
+        }else {
+            res.json("No se encuentra en la BBDD");
+        }
+    });
+});
+
 app.get('/enviar',function(req,res) { //Para enviar un mensaje de contacto
 
     var transporter = nodemailer.createTransport({ 

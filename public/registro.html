@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Inicio | Share Your Car</title>
+    <title>Contacto | Share Your Car</title>
     <!--Favicon-->
     <link rel="icon" type="image/jpg" href="css/images/icono.jpg" />
     <!--Import materialize.css-->
@@ -13,15 +13,14 @@
     <!--Nuestro CSS-->
     <link type="text/css" rel="stylesheet" href="css/main.css" />
     <!--Iconos-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Google Fonts-->
-    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
     <!--Header-->
- 
     <div class="navbar-fixed">
         <nav class="teal lighten-2">
             <a href="index.html" id="logo" class="brand-logo">SYC</a>
@@ -44,44 +43,44 @@
             <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </nav>
     </div>
-
     <div class="container" role="grid">
         <div class="row" role="row">
             <div class="col s12">
-                <h1 id="titulo" role="heading">Share Your Car</h1>
+                <h1 id="titulo" role="heading" >Registro</h1>
             </div>
 
         </div>
-    </div>
 
     <!--Content-->
-    
-        <div class="parallax-container">
-            <div class="parallax"><img src="css/images/autopista_1.jpg" alt="Peaje"></div>
-        </div>
 
-    <div class="container" role="main">
-        <div class="row" role="grid">
-            <div class="col s12" role="contentinfo">
-                <h2>¿Quiénes somos?</h2>
-                <p>
-                    El equipo de SYC está formado por un grupo de alumnos del Grado en Ingeniería Informática integrado en la ESIT (Escuela Superior de Ingeniería y Tecnología) de la ULL, cuyo perfil presenta facilidad para trabajar con nuevas tecnologías, así como una gran
-                    imaginación para poner en funcionamiento dichas tecnologías, sacarles el máximo partido y crear sistemas y aplicaciones que puedan ser de gran utilidad para las personas.
-                </p>
-        </div>
-
-            <div class="col s12" role="contentinfo">
-                <h2>¿Cuándo podré usar SYC?</h2>
-                <p>
-                    SYC se encuentra ahora mismo en fase de desarrollo. Es por ello que aún no se dispone de una versión funcional para sacar al mercado. ¡Nuestro equipo está trabajando duro cada día para que podáis empezar cuanto antes a disfrutar de todas las ventajas
-                    y los servicios que os tenemos preparados!
-                </p>
+        <div class="row" role="main">
+            <div class="col s4 offset-s4">
+                <form class="col s12">
+                    <div class="input-field col s12">
+                        <input placeholder="ejemplo@gmail.com" id="r_correo" type="text" class="validate">
+                        <label for="r_correo">Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                            <input placeholder="Samuel" id="r_nombre" type="text" class="validate">
+                            <label for="r_nombre">Nombre</label>
+                    </div>
+                    <div class="input-field col s12">
+                            <input placeholder="Ramos Barroso" id="r_apellidos" type="text" class="validate">
+                            <label for="r_apellidos">Apellido</label>
+                    </div>
+                    <div class="input-field col s12">
+                            <input placeholder="Samuel Ramos Barroso" id="r_contra" type="password" class="validate">
+                            <label for="r_contra">Contraseña</label>
+                    </div>
+                    <div class="col s4 offset s4"> 
+                        <button class="btn waves-effect waves-light" id="r_boton">Submit</button>
+                    </div>
+                    
+                </form>
             </div>
+
         </div>
-    </div>
-    
-    <div class="parallax-container">
-        <div class="parallax"><img src="css/images/compartir-coche.jpg" alt="Interior coche"></div>
+
     </div>
 
     <!--Footer-->
@@ -89,11 +88,11 @@
         <div class="container" role="grid">
             <div class="row" role="row">
                 <div class="col l6 s12">
-                    <h3 class="white-text" role="heading">Share Your Car</h3>
+                    <h3 class="white-text" role="heading" >Share Your Car</h3>
                     <p class="grey-text text-lighten-4">Comparte gastos, ahorra y cuida del medio ambiente!</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
-                    <h3 class="white-text" role="heading">Autores</h3>
+                    <h3 class="white-text" role="heading" >Autores</h3>
                     <ul>
                         <li class="white-text"> Kevin Estévez Expósito</li>
                         <li class="white-text"> Nitesh Gul Ramnani</li>
@@ -111,6 +110,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/client.js"></script>
+
 </body>
 
 </html>

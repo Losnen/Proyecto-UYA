@@ -49,13 +49,27 @@ $(document).ready( function()  {
       "texto": $("#texto").val()
       });
    });
+   
+   $("#r_boton").click( function() {
+      $.get("/registro",{
+      "r_nombre": $("#r_nombre").val(),
+      "r_apellidos": $("#r_apellidos").val(),
+      "r_correo": $("#r_correo").val(),
+      "r_contra": $("#r_contra").val()
+      });
+   });
     
-    $("#costes_btn").click( function() {
+   $("#costes_btn").click( function() {
        console.log($("#dest option:selected" ).text());
        console.log($("#org option:selected" ).text());
-      $.get("/costes",{
-      "origen": $("#org option:selected" ).text(),
-      "destino": $("#dest option:selected" ).text()
+      $.get("/calculadora",{
+      "org": $("#org option:selected" ).text(),
+      "dest": $("#dest option:selected" ).text()
+      }, function (data){
+         console.log(data[0]);
+         var parrafo = "Trayecto: " + data[0].Trayecto + " Coste: " + data[0].Coste;
+         $('#resultado_c').empty();
+         $('#resultado_c').append(parrafo);
       });
    });
 });
