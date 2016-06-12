@@ -27,18 +27,18 @@
             <ul class="right hide-on-med-and-down">
                 <li role="menuitem"><a role="link" href="index.html">Inicio</a></li>
                 <li role="menuitem"><a role="link" href="trayecto.html">Trayectos</a></li>
+                <li role="menuitem"><a role="link" href="calculator.html">Calculadora</a></li> 
                 <li role="menuitem"><a role="link" href="contacto.html">Contacto</a></li>
                 <li role="menuitem"><a role="link" href="about.html">Acerca de SYC</a></li>
-                <li role="menuitem"><a role="link" href="calculator.html">Calculadora</a></li>  
                 <li role="menuitem"><a role="link" href="registro.html">Registro</a></li>  
             </ul>
             <ul id="slide-out" class="side-nav">
                 <li role="menuitem"><a role="link" href="index.html">Inicio</a></li>
                 <li role="menuitem"><a role="link" href="trayecto.html">Trayectos</a></li>
+                <li role="menuitem"><a role="link" href="calculator.html">Calculadora</a></li> 
                 <li role="menuitem"><a role="link" href="contacto.html">Contacto</a></li>
                 <li role="menuitem"><a role="link" href="about.html">Acerca de SYC</a></li>
-                <li role="menuitem"><a role="link" href="calculator.html">Calculadora</a></li>  
-                <li role="menuitem"><a role="link" href="registro.html">Registro</a></li>  
+                <li role="menuitem"><a role="link" href="registro.html">Registro</a></li>   
             </ul>
             <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </nav>
@@ -57,15 +57,15 @@
             <div class="col s12">
                 <form class="col s12">
                     <div class="input-field col s12">
-                        <input placeholder="ejemplo@gmail.com" id="correo" type="text" class="validate">
+                        <input placeholder="ejemplo@gmail.com" id="correo" type="text" class="validate" required>
                         <label for="correo">Email</label>
                     </div>
                     <div class="input-field col s12">
-                            <input placeholder="Duda con trayectos" id="asunto" type="text" class="validate">
+                            <input placeholder="Duda con trayectos" id="asunto" type="text" class="validate" required>
                             <label for="asunto">Asunto</label>
                     </div>
                     <div class="input-field col s12">
-                        <textarea placeholder="Escriba su mensaje aquí" id="texto" class="materialize-textarea"></textarea>
+                        <textarea placeholder="Escriba su mensaje aquí" id="texto" class="materialize-textarea" required></textarea>
                         <label for="texto">Mensaje</label>
                     </div>
                     <button class="btn waves-effect waves-light" id="env_contacto">Submit
@@ -97,7 +97,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div role="contentinfo" class="footer-copyright">
                 <p align="center">© 2016 Copyright SYC</p>
         </div>
     </footer>

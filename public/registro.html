@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Contacto | Share Your Car</title>
+    <title>Registro | Share Your Car</title>
     <!--Favicon-->
     <link rel="icon" type="image/jpg" href="css/images/icono.jpg" />
     <!--Import materialize.css-->
@@ -27,18 +27,18 @@
             <ul class="right hide-on-med-and-down">
                 <li role="menuitem"><a role="link" href="index.html">Inicio</a></li>
                 <li role="menuitem"><a role="link" href="trayecto.html">Trayectos</a></li>
+                <li role="menuitem"><a role="link" href="calculator.html">Calculadora</a></li> 
                 <li role="menuitem"><a role="link" href="contacto.html">Contacto</a></li>
                 <li role="menuitem"><a role="link" href="about.html">Acerca de SYC</a></li>
-                <li role="menuitem"><a role="link" href="calculator.html">Calculadora</a></li>  
-                <li role="menuitem"><a role="link" href="registro.html">Registro</a></li>  
+                <li role="menuitem"><a role="link" href="registro.html">Registro</a></li>   
             </ul>
             <ul id="slide-out" class="side-nav">
                 <li role="menuitem"><a role="link" href="index.html">Inicio</a></li>
                 <li role="menuitem"><a role="link" href="trayecto.html">Trayectos</a></li>
+                <li role="menuitem"><a role="link" href="calculator.html">Calculadora</a></li> 
                 <li role="menuitem"><a role="link" href="contacto.html">Contacto</a></li>
                 <li role="menuitem"><a role="link" href="about.html">Acerca de SYC</a></li>
-                <li role="menuitem"><a role="link" href="calculator.html">Calculadora</a></li>  
-                <li role="menuitem"><a role="link" href="registro.html">Registro</a></li>  
+                <li role="menuitem"><a role="link" href="registro.html">Registro</a></li>   
             </ul>
             <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </nav>
@@ -57,19 +57,19 @@
             <div class="col s4 offset-s4">
                 <form class="col s12">
                     <div class="input-field col s12">
-                        <input placeholder="ejemplo@gmail.com" id="r_correo" type="text" class="validate">
+                        <input placeholder="ejemplo@gmail.com" id="r_correo" type="text" class="validate" required>
                         <label for="r_correo">Email</label>
                     </div>
                     <div class="input-field col s12">
-                            <input placeholder="Samuel" id="r_nombre" type="text" class="validate">
+                            <input placeholder="Samuel" id="r_nombre" type="text" class="validate" required>
                             <label for="r_nombre">Nombre</label>
                     </div>
                     <div class="input-field col s12">
-                            <input placeholder="Ramos Barroso" id="r_apellidos" type="text" class="validate">
+                            <input placeholder="Ramos Barroso" id="r_apellidos" type="text" class="validate" required>
                             <label for="r_apellidos">Apellido</label>
                     </div>
                     <div class="input-field col s12">
-                            <input placeholder="Samuel Ramos Barroso" id="r_contra" type="password" class="validate">
+                            <input placeholder="Samuel Ramos Barroso" id="r_contra" type="password" class="validate" required>
                             <label for="r_contra">Contraseña</label>
                     </div>
                     <div class="col s4 offset s4"> 
@@ -101,7 +101,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div role="contentinfo" class="footer-copyright">
                 <p align="center">© 2016 Copyright SYC</p>
         </div>
     </footer>
